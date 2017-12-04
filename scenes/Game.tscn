@@ -84,7 +84,7 @@ config/pitch_random = 0.0
 anchor_mode = 1
 rotating = false
 current = true
-zoom = Vector2( 1, 1 )
+zoom = Vector2( 2, 2 )
 limit/left = -10000000
 limit/top = -10000000
 limit/right = 10000000
@@ -168,22 +168,17 @@ visibility/visible = false
 transform/pos = Vector2( -2.6586, 1.34036 )
 transform/scale = Vector2( 0.60451, 0.60451 )
 
-[node name="Day" type="Label" parent="Camera"]
+[node name="Panel" type="Panel" parent="Camera"]
 
-visibility/visible = false
+visibility/opacity = 0.0
 focus/ignore_mouse = true
-focus/stop_mouse = true
+focus/stop_mouse = false
 size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = -966.0
-margin/top = -565.0
-margin/right = -292.0
-margin/bottom = -475.0
-custom_fonts/font = SubResource( 3 )
-text = "Day 1"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
+size_flags/vertical = 2
+margin/left = -1202.0
+margin/top = -825.0
+margin/right = 1214.0
+margin/bottom = 784.0
 
 [node name="Money" type="Node2D" parent="Camera"]
 
@@ -211,16 +206,21 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Panel" type="Panel" parent="Camera"]
+[node name="Day" type="Label" parent="Camera"]
 
-visibility/opacity = 0.0
+visibility/visible = false
 focus/ignore_mouse = true
-focus/stop_mouse = false
+focus/stop_mouse = true
 size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = -1202.0
-margin/top = -825.0
-margin/right = 1214.0
-margin/bottom = 784.0
+size_flags/vertical = 0
+margin/left = -966.0
+margin/top = -565.0
+margin/right = -292.0
+margin/bottom = -475.0
+custom_fonts/font = SubResource( 3 )
+text = "Day 1"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 

@@ -499,7 +499,6 @@ func _ready():
 	_switch_scene("menu")
 
 func generateBubbles(n=-1):
-	print("GENERATE BUBBLES")
 	if people[curCharacter].responses[curResponse].m.size() == 0:
 		return
 	if n == -1:
